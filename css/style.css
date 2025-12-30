@@ -1,0 +1,122 @@
+/* Minimalist academic style inspired by early web layouts and Guido van Rossum's home page */
+body {
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 0 30px;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+header {
+    border-bottom: 2px solid #333;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin: 0 0 5px 0;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ccc;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 3px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+    color: #000;
+}
+
+.contact-info {
+    font-style: italic;
+    font-size: 1em;
+    color: #444;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Section Spacing */
+section {
+    margin-bottom: 1.5em;
+}
+
+/* Job/Experience Styling */
+.job {
+    margin-bottom: 2em;
+}
+
+.job h3 {
+    margin-top: 0;
+}
+
+.job small {
+    display: block;
+    margin-bottom: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+/* Lists */
+ul {
+    list-style-type: disc;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Links */
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+/* Proportional control for larger screens */
+@media (min-width: 600px) {
+    .intro-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .bio-text {
+        flex: 3;
+    }
+}
+
+.project-name {
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 60px;
+    font-size: 0.85em;
+    color: #777;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    text-align: center;
+    font-style: italic;
+}
